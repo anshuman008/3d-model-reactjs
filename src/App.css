@@ -1,0 +1,51 @@
+.App {
+    width: 50vw;
+    height: 100vh;
+    background-color: red;
+}
+
+body {
+    background-color: rgb(39, 41, 42);
+}
+
+
+
+.configurator {
+    /* position: fixed; */
+    right: 24px;
+    width: 320px;
+    bottom: 25vh;
+    color: black;
+    padding: 16px;
+}
+
+.configurator_section_title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.configurator_section_values {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.item_label{
+    font-size: 12px;
+    transition: 0.4s color;
+}
+
+.item {
+    transition: 0.4s opacity;
+}
+
+.item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.item.item--active .item_label {
+    color: white;
+}
+
